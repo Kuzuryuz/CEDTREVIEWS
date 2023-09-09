@@ -37,3 +37,15 @@ function addtext(){
 }
 
 submitbutton.addEventListener('click', addtext);
+
+const submit2 = document.getElementById('reviews2in');
+const submitbutton2 = document.getElementById('submitbutton2');
+
+function addtext2(){
+    const newment2 = document.createElement('p');
+    newment2.textContent = document.getElementById("textarea2").value;
+
+    submit2.prepend(newment2);
+}
+
+submitbutton2.addEventListener('click', addtext2);
