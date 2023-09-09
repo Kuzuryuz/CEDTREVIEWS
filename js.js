@@ -25,3 +25,15 @@ comment2.addEventListener('click', () => {
     if (textArea2.style.display === 'none') textArea2.style.display = 'block';
     else textArea2.style.display = 'none'; 
 })
+
+const submit = document.getElementById('reviews1in');
+const submitbutton = document.getElementById('submitbutton');
+
+function addtext(){
+    const newment = document.createElement('p');
+    newment.textContent = document.getElementById("textarea").value;
+
+    submit.prepend(newment);
+}
+
+submitbutton.addEventListener('click', addtext);
