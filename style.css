@@ -10,6 +10,8 @@ body {
     background-color: rgb(245, 204, 41);
     text-align: center;
     padding: 20px;
+    letter-spacing: 4px;
+    font-family: "Times New Roman", Times, serif;
 }
 
 button {
