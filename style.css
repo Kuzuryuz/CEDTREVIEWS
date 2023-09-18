@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Creat column */
+* {
+    box-sizing: border-box;
+  }
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+}
+
+html, body {
+    font-family: 'Noto Sans Thai', sans-serif;
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(245, 204, 41);
+    margin: 30px 0 25px;
+    padding: 15px;
+}
+
+.left {
+    margin: -10px 35px 0 70px;
+}
+
+.right {
+    margin: -10px 70px 0 35px;
+}
+
+.subject-title {
+    text-align: center;
+    font-size: 22px;
+    background-color: rgb(255, 181, 96);
+    margin: 0;
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.reviews-background {
+    background-color: #333;
+    color: white;
+    margin: 0;
+    padding: 1px 0 48px 0;
+    border-radius: 0 0 20px 20px;
+}
+
+.reviews-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0 6px 30px;
+}
+
+.reviews-content {
+    background-color: azure;
+    color: black;
+    margin: 0 30px;   
+    padding: 0 15px;
+    border: 2px solid #333;
+    border-radius: 12px;
+}
+
+.reviews-head {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.reviews-body {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    width: auto;
+    overflow-wrap: break-word;
+}
+
+.reviews-button {
+    float: right;
+    background-color: azure;
+    font-size: 12px;
+    margin: 9px 30px 0 0;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.textarea-content {
+    padding: 0 30px 0 30px;
+}
+
+textarea {
+    background-color: azure;
+    color: black;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    border: 2px solid #333;
+    outline: none;
+    resize: none;
+    max-height: 150px;
+}
+
+.textarea-head {
+    font-size: 14px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.textarea-body {
+    font-size: 12px;
+    border-radius: 12px;
+}
+
+.submit-button {
+    float: right;
+    background-color: azure;
+    font-size: 12px;
+    margin-top: 9px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.text-error-float {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.text-error {
+    color: red;
+    font-size: 12px;
+    margin: 7px 0 0 3px;
+}
