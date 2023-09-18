@@ -1,51 +1,36 @@
-const showReviews1 = document.getElementById('2110104');
-showReviews1.addEventListener('click', () => {
-    const review = document.getElementById('reviews1');
-    if (review.style.display === 'none') review.style.display = 'block';
-    else review.style.display = 'none'; 
+const showcourse11 = document.getElementById('y1s1');
+showcourse11.addEventListener('click', () => {
+    const courses = document.getElementById('course11');
+    if (courses.style.display === 'none') courses.style.display = 'block';
+    else courses.style.display = 'none'; 
 })
-
-const showReviews2 = document.getElementById('2110222');
-showReviews2.addEventListener('click', () => {
-    const review = document.getElementById('reviews2');
-    if (review.style.display === 'none') review.style.display = 'block';
-    else review.style.display = 'none'; 
+const comment1 = document.getElementById('ComProg');
+comment1.addEventListener('click', () => {
+    const textArea1 = document.getElementById('104text');
+    if (textArea1.style.display === 'none') textArea1.style.display = 'block';
+    else textArea1.style.display = 'none'; 
 })
-
-const comment = document.getElementById('comment');
-comment.addEventListener('click', () => {
-    const textArea = document.getElementById('text');
-    if (textArea.style.display === 'none') textArea.style.display = 'block';
-    else textArea.style.display = 'none'; 
-})
-
-const comment2 = document.getElementById('comment2');
+const comment2 = document.getElementById('f2cedt');
 comment2.addEventListener('click', () => {
-    const textArea2 = document.getElementById('text2');
+    const textArea2 = document.getElementById('222text');
     if (textArea2.style.display === 'none') textArea2.style.display = 'block';
     else textArea2.style.display = 'none'; 
 })
-
-const submit = document.getElementById('reviews1in');
-const submitbutton = document.getElementById('submitbutton');
-
-function addtext(){
-    const newment = document.createElement('p');
-    newment.textContent = document.getElementById("textarea").value;
-
-    submit.prepend(newment);
-}
-
-submitbutton.addEventListener('click', addtext);
-
-const submit2 = document.getElementById('reviews2in');
-const submitbutton2 = document.getElementById('submitbutton2');
-
-function addtext2(){
-    const newment2 = document.createElement('p');
-    newment2.textContent = document.getElementById("textarea2").value;
-
-    submit2.prepend(newment2);
-}
-
-submitbutton2.addEventListener('click', addtext2);
+const comment3 = document.getElementById('dcl');
+comment3.addEventListener('click', () => {
+    const textArea3 = document.getElementById('252text');
+    if (textArea3.style.display === 'none') textArea3.style.display = 'block';
+    else textArea3.style.display = 'none'; 
+})
+const comment4 = document.getElementById('algo');
+comment4.addEventListener('click', () => {
+    const textArea4 = document.getElementById('328text');
+    if (textArea4.style.display === 'none') textArea4.style.display = 'block';
+    else textArea4.style.display = 'none'; 
+})
+const comment5 = document.getElementById('discrete');
+comment5.addEventListener('click', () => {
+    const textArea5 = document.getElementById('204text');
+    if (textArea5.style.display === 'none') textArea5.style.display = 'block';
+    else textArea5.style.display = 'none'; 
+})
