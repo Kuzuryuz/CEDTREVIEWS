@@ -34,3 +34,15 @@ comment5.addEventListener('click', () => {
     if (textArea5.style.display === 'none') textArea5.style.display = 'block';
     else textArea5.style.display = 'none'; 
 })
+const submitbutton104 = document.getElementById('submitbutton1');
+submitbutton104.addEventListener('click', function(){
+    const submit104 = document.getElementById('104comment');
+    const newment1 = document.createElement('p');
+    newment1.textContent = document.getElementById('textarea104').value;
+    submit104.prepend(newment1);
+
+    const newline1 = document.createElement('hr')
+    submit104.prepend(newline1);
+
+    document.getElementById("textarea104").value = '';
+})
