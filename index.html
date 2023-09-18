@@ -3,43 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CEDT Review</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="page1.css">
+    <title>CEDT SHARING!</title>
 </head>
 <body>
-    <h1 class="header">CEDT REVIEW</h1>
-    <div class="row">
-        <div class="column">
-            <h3 class="subject">2110104 Computer Programming</h3>
-            <button id="2110104" class="button00">Show Reviews</button> <br>
-            <div id="reviews1" hidden style="display: none;"><h4>Reviews</h4>
-                <div id="reviews1in">
-                    <p>ccccc</p>
-                    <button id="comment" class="button00">comment</button> <br>
-                    <div id="text" hidden>
-                        <textarea  class="textarea00" cols="30" rows="10" id="textarea"></textarea> <br>
-                        <button id="submitbutton" class="button00">submit</button>
+    <h1>CEDT SHARING!</h1>
+    <div class="semesterbox" id="y1s1box">
+        <p class="year">Year 1 Semester 1</p>
+        <button id="y1s1" class="button00">Courses</button>
+            <div id="course11" hidden style="display: none;">
+                <button class="subbox" id="ComProg">Computer Programming</button>
+                    <div id="104text" hidden>
+                        <br><textarea class="textarea00" id="textarea"></textarea><br>
+                        <button id="submitbutton1" class="button00">submit</button>
                     </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="column">
-            <h3 class="subject">2110222 Introduction to CEDT</h3>
-            <button id="2110222" class="button00">Show Reviews</button> <br>
-            <div id="reviews2" hidden style="display: none;"><h4>Review</h4>
-                <div id="reviews2in">
-                    <p>สุดยอดมาก</p>
-                    <button id="comment2" class="button00">comment</button> <br>
-                    <div id="text2" hidden>
-                        <textarea  class="textarea00" cols="30" rows="10" id="textarea2">123</textarea> <br>
+                <button class="subbox" id="f2cedt">Introduction to CEDT</button>
+                    <div id="222text" hidden>
+                        <br><textarea class="textarea00" id="textarea"></textarea><br>
                         <button id="submitbutton2" class="button00">submit</button>
-                </div>
-            </div>    
+                    </div>
+                <button class="subbox" id="dcl">Digital Computer Logic</button>
+                    <div id="252text" hidden>
+                        <br><textarea class="textarea00" id="textarea"></textarea><br>
+                        <button id="submitbutton3" class="button00">submit</button>
+                    </div>
+                <button class="subbox" id="algo">Data Structures and Algorithms</button>
+                    <div id="328text" hidden>
+                        <br><textarea class="textarea00" id="textarea"></textarea><br>
+                        <button id="submitbutton4" class="button00">submit</button>
+                    </div>
+                <button class="subbox" id="discrete">Discrete Structures</button>
+                    <div id="204text" hidden>
+                        <br><textarea class="textarea00" id="textarea"></textarea><br>
+                        <button id="submitbutton5" class="button00">submit</button>
+                    </div>
             </div>
-        </div>
-    </div>
+    </div><br>
+    
+    <div class="semesterbox" id="y1s2box">
+        <p class="year">Year 1 Semester 2</p>
+        <button id="y1s2" class="button00">Courses</button><br>
+    </div><br>
 
-    <script src="js.js"></script>
+    <div class="semesterbox" id="y2s1box">
+        <p class="year">Year 2 Semester 1</p>
+        <button id="y2s1" class="button00">Courses</button><br>
+    </div><br>
+
+    <div class="semesterbox" id="y2s2box">
+        <p class="year">Year 2 Semester 2></p>
+        <button id="y2s2" class="button00">Courses</button><br>
+    </div><br>
+
+    <div class="semesterbox" id="y3s1box">
+        <p class="year">Year 3 Semester 1</p>
+        <button id="y3s1" class="button00">Courses</button><br>
+    </div><br>
+
+    <div class="semesterbox" id="y3s2box">
+        <p class="year">Year 3 Semester 2</p>
+        <button id="y3s2" class="button00">Courses</button><br>
+    </div><br>
+
+    <div class="semesterbox" id="y4s1box">
+        <p class="year">Year 4 Semester 1</p>
+        <button id="y4s1" class="button00">Courses</button><br>
+    </div><br>
+
+    <script src="page1.js"></script>
 </body>
 </html>
