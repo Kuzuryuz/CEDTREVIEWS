@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600&display=swap');
+body{
+    background-color: rgb(213, 213, 213);
+}
+*{
+    font-family: Futura;
+}
+h1{
+    text-align: center;
+    font-size: 350%;
+    color: rgb(21, 21, 106);
+}
+.year{
+    padding-top: 20px;
+    text-align: center;
+    font-family: initial;
+    font-size: 200%;
+    color: rgb(213, 213, 213);
+    text-decoration: none;
+}
+.semesterbox{
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    padding-bottom: 30px;
+}
+#y1s1box,#y1s2box{
+    background-color: rgb(21, 21, 106);
+}
+#y2s1box,#y2s2box{
+    background-color: rgb(42, 42, 133);
+}
+#y3s1box,#y3s2box{
+    background-color: rgb(66, 66, 145);
+}
+#y4s1box{
+    background-color: rgb(106, 106, 181);
+}
+.subbox{
+    margin-left: 10%;
+    margin-top: 30px;
+    width: 80%;
+    background-color:white;
+    height: 1.5cm;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 150%;
+    color: rgb(21, 21, 106);
+}
+.button00 {
+    margin-left: 45%;
+    margin-top: 10px;
+    background-color: #6B7280;
+    color: white;
+    cursor: pointer;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 0.925rem;
+    font-weight: 600;
+    line-height: 0.8rem;
+    padding: .55rem 0.9rem;
+}
+.button00:hover {
+    background-color: #374151;
+}
+.textarea00{
+    width: 75%;
+    height: 2cm;
+    margin-left: 12%;
+    background-color: rgb(213, 213, 213);
+    font-size: 120%;
+    color: rgb(21, 21, 106);
+}
