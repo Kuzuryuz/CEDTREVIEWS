@@ -2,7 +2,7 @@ const textarea = document.querySelectorAll('.textarea');
 textarea.forEach((text) => {
     text.addEventListener('keyup', e => {
         text.style.height = 'auto';
-        let height = e.target.scrollHeight + 4;
+        let height = e.target.scrollHeight-20;
         text.style.height = `${height}px`;
     });
 });
@@ -37,6 +37,22 @@ function showReviews2() {
     document.getElementById('2110222-textarea').style.display = 'none';
     document.getElementById('2110222-review-button').style.display = 'block';
     document.getElementById('2110222-text-error').style.display = 'none';
+}
+
+function showReviews3() {
+    const review = document.getElementById('2110252-review');
+    if (review.style.display === 'block') {
+        review.style.display = 'none';
+    } else review.style.display = 'block';
+
+    const title = document.getElementById('2110252-title');
+    if (title.style.borderRadius === '20px') {
+        title.style.borderRadius = '20px 20px 0px 0px';
+    } else title.style.borderRadius = '20px';
+
+    document.getElementById('2110252-textarea').style.display = 'none';
+    document.getElementById('2110252-review-button').style.display = 'block';
+    document.getElementById('2110252-text-error').style.display = 'none';
 }
 
 function showTextArea1() {

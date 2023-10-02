@@ -1,25 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* Creat column */
-* {
-    box-sizing: border-box;
-  }
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-}
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-@media screen and (max-width:600px) {
-    .column {
-      width: 100%;
-    }
-}
-
 html, body {
     font-family: 'Noto Sans Thai', sans-serif;
     background-color: beige;
@@ -27,25 +7,13 @@ html, body {
     padding: 0;
 }
 
-.main-title {
-    text-align: center;
-    font-size: 30px;
-    background-color: rgb(245, 204, 41);
-    margin: 30px 0 25px;
-    padding: 15px;
-}
-
-.left {
-    margin: -10px 35px 0 50px;
-}
-
-.right {
-    margin: -10px 35px 0 50px;
+.container {
+    margin: 0 50px;
 }
 
 .subject-title {
     text-align: center;
-    font-size: 22px;
+    font-size: 27px;
     background-color: rgb(255, 181, 96);
     margin: 0;
     padding: 15px;
@@ -57,34 +25,38 @@ html, body {
     background-color: #333;
     color: white;
     margin: 0;
-    padding: 1px 0 48px 0;
+    padding: 1px 0 52px 0;
     border-radius: 0 0 20px 20px;
 }
 
+.reviews-container {
+    margin: 0 30px;
+}
+
 .reviews-title {
-    font-size: 18px;
+    font-size: 23px;
     font-weight: 700;
-    margin: 10px 0 6px 30px;
+    margin: 10px 0 6px 0;
 }
 
 .reviews-content {
     background-color: azure;
     color: black;
-    margin: 0 30px;   
+    margin: 0;   
     padding: 0 15px;
     border: 2px solid #333;
     border-radius: 12px;
 }
 
 .reviews-head {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
     margin-top: 8px;
     margin-bottom: 0;
 }
 
 .reviews-body {
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 5px;
     margin-bottom: 6px;
     width: auto;
@@ -94,18 +66,18 @@ html, body {
 .reviews-button {
     float: right;
     background-color: azure;
-    font-size: 12px;
-    margin: 9px 30px 0 0;
+    font-size: 16px;
+    margin-top: 9px;
     padding: 5px 10px;
     border-radius: 10px;
     cursor: pointer;
 }
 
-.textarea-content {
-    padding: 0 30px 0 30px;
+.text-container {
+    padding: 0 23px 0 0;
 }
 
-textarea {
+.textarea {
     background-color: azure;
     color: black;
     display: block;
@@ -115,38 +87,35 @@ textarea {
     border: 2px solid #333;
     outline: none;
     resize: none;
-    max-height: 150px;
+    max-height: 200px;
 }
 
 .textarea-head {
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 10px;
     border-radius: 10px;
 }
 
 .textarea-body {
-    font-size: 12px;
+    font-size: 16px;
     border-radius: 12px;
 }
 
 .submit-button {
     float: right;
     background-color: azure;
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 9px;
+    margin-right: -23px;
     padding: 5px 10px;
     border-radius: 10px;
     cursor: pointer;
 }
 
-.text-error-float {
-    float: left;
-    margin: 0;
-    padding: 0;
-}
-
 .text-error {
+    float: left;
     color: red;
-    font-size: 12px;
-    margin: 7px 0 0 3px;
+    font-size: 16px;
+    margin: 4px 0 0 3px;
+    padding: 0;
 }
