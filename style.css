@@ -1,121 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-html, body {
-    font-family: 'Noto Sans Thai', sans-serif;
-    background-color: beige;
+* {
     margin: 0;
-    padding: 0;
+    padding: 0; 
 }
 
-.container {
-    margin: 0 50px;
+.navigation-bar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 25px;
+    z-index: 10;
 }
 
-.subject-title {
-    text-align: center;
-    font-size: 27px;
-    background-color: rgb(255, 181, 96);
-    margin: 0;
-    padding: 15px;
-    border-radius: 20px;
-    cursor: pointer;
+.menu-container {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
 }
 
-.reviews-background {
-    background-color: #333;
-    color: white;
-    margin: 0;
-    padding: 1px 0 52px 0;
-    border-radius: 0 0 20px 20px;
-}
-
-.reviews-container {
-    margin: 0 30px;
-}
-
-.reviews-title {
-    font-size: 23px;
-    font-weight: 700;
-    margin: 10px 0 6px 0;
-}
-
-.reviews-content {
-    background-color: azure;
-    color: black;
-    margin: 0;   
-    padding: 0 15px;
-    border: 2px solid #333;
-    border-radius: 12px;
-}
-
-.reviews-head {
+.menu-container a {
+    text-decoration: none;
     font-size: 18px;
-    font-weight: 500;
-    margin-top: 8px;
-    margin-bottom: 0;
-}
-
-.reviews-body {
-    font-size: 16px;
-    margin-top: 5px;
-    margin-bottom: 6px;
-    width: auto;
-    overflow-wrap: break-word;
-}
-
-.reviews-button {
-    float: right;
-    background-color: azure;
-    font-size: 16px;
-    margin-top: 9px;
-    padding: 5px 10px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.text-container {
-    padding: 0 23px 0 0;
-}
-
-.textarea {
-    background-color: azure;
     color: black;
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding: 10px;
-    border: 2px solid #333;
-    outline: none;
-    resize: none;
-    max-height: 200px;
+    padding: 25px;
 }
 
-.textarea-head {
+#review-button {
     font-size: 18px;
-    margin-top: 10px;
-    border-radius: 10px;
-}
-
-.textarea-body {
-    font-size: 16px;
-    border-radius: 12px;
-}
-
-.submit-button {
-    float: right;
-    background-color: azure;
-    font-size: 16px;
-    margin-top: 9px;
-    margin-right: -23px;
-    padding: 5px 10px;
-    border-radius: 10px;
+    font-weight: 600;
+    padding: 15px 40px;
+    border-radius: 18px;
+    border: none;
+    background-color: #A4D9FF;
+    position: absolute;
+    top: 10px;
+    right: 40px;
     cursor: pointer;
 }
 
-.text-error {
+#review-button:hover {
+    background-color: #7eb7e0;
+}
+
+#close-button {
     float: left;
-    color: red;
+    background-color: azure;
     font-size: 16px;
-    margin: 4px 0 0 3px;
-    padding: 0;
+    margin-top: 9px;
+    margin-left: 9px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#review-page {
+    position: fixed;
+    width: 40%;
+    height: 50%;
+    background: white;
+    border: 1px solid rgba(50,117,165,255);
+    border-radius: 15px;
+    padding: 10px;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+  }
+
+#review-page h1 {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#review-page button {
+    font-size: 16px;
+    padding: 10px 0;
+    width: 100px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#review-page button:hover {
+    background-color: rgb(219, 219, 219);
+}
+
+#review-page textarea {
+    resize: none;
+}
+
+#review-page textarea:hover {
+    background-color: rgb(219, 219, 219);
+}
+
+.page-title {
+    margin-top: 40px;
+}
+
+.description {
+    padding: 100px;
+}
+
+.subject {
+    background-color: #062453;
 }
