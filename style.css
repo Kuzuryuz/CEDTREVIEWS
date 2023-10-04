@@ -32,7 +32,7 @@
 
 .menu-container a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 0.7vw;
     font-weight: 600;
     color: black;
     padding: 25px;
@@ -43,7 +43,7 @@
 }
 
 #review-button {
-    font-size: 18px;
+    font-size: 0.7vw;
     font-weight: 600;
     background-color: #474747;
     color: white;
@@ -62,12 +62,12 @@
 
 #review-page {
     position: fixed;
-    width: 40%;
-    height: 50%;
+    width: 40vw;
+    height: 25vw;
     background: white;
     border: 1px solid rgba(50,117,165,255);
-    border-radius: 15px;
-    padding: 10px;
+    border-radius: 0.8vw;
+    padding: 0.3vw;
     margin: auto;
     top: 0;
     right: 0;
@@ -78,15 +78,15 @@
   }
 
 #review-page h1 {
-    font-size: 35px;
+    font-size: 1.5vw;
     font-weight: 800;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 1.2vw;
 }
 
 #subject-selector {
-    font-size: 18px;
-    border-radius: 10px;
+    font-size: 0.7vw;
+    border-radius: 0.3vw;
     margin: 2% 5%;
     padding: 1%;
     width: 90%;
@@ -97,17 +97,17 @@
 }
 
 #review-page h6 {
-    font-size: 18px;
+    font-size: 0.7vw;
     margin: 0 5% 1% 5%;
 }
 
 #review-page textarea {
     resize: none;
-    font-size: 18px;
-    border-radius: 10px;
+    font-size: 0.7vw;
+    border-radius: 0.2vw;
     margin: 0 5% 1% 5%;
-    padding: 15px;
-    width: 88%;
+    padding: 0.4vw;
+    width: 35.1vw;
 }
 
 #review-page textarea:hover {
@@ -115,16 +115,16 @@
 }
 
 #textarea-review {
-    height: 23%;
+    height: 6vw;
 }
 
 #review-page button {
-    font-size: 16px;
+    font-size: 0.6vw;
     background-color: #474747;
     color: white;
-    border-radius: 10px;
-    padding: 10px 0;
-    width: 120px;
+    border-radius: 0.4vw;
+    padding: 0.4vw 0;
+    width: 6vw;
     cursor: pointer;
 }
 
