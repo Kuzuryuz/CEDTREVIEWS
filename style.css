@@ -12,7 +12,7 @@
     top: 0;
     left: 0;
     right: 0;
-    padding: 25px 0 25px 80px;
+    padding: 0.9vw 0 0.9vw 3.1vw;
     z-index: 10;    
 }
 
@@ -22,18 +22,18 @@
 }
 
 .logo {
-    width: 77px;
+    width: 2.9vw;
     position: absolute;
-    top: -44px;
-    left: -80px;
+    top: -1.68vw;
+    left: -3.1vw;
 }
 
 .menu-container a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 0.7vw;
     font-weight: 600;
     color: black;
-    padding: 25px;
+    padding: 0.9vw;
 }
 
 .menu-container a:hover {
@@ -41,16 +41,16 @@
 }
 
 #review-button {
-    font-size: 18px;
+    font-size: 0.7vw;
     font-weight: 600;
     background-color: #474747;
     color: white;
-    padding: 15px 40px;
-    border-radius: 18px;
+    padding: 0.5vw 2vw;
+    border-radius: 0.7vw;
     border: none;
     position: absolute;
-    top: 10px;
-    right: 40px;
+    top: 0.35vw;
+    right: 1vw;
     cursor: pointer;
 }
 
