@@ -11,6 +11,9 @@
 <body>
     <nav class="navigation-bar">
         <div class="menu-container">
+            <img class="logo" src="./Items/logo.jpg">
+        </div>
+        <div class="menu-container">
             <a href="#">COM PROG</a>
         </div>
         <div class="menu-container">
@@ -22,14 +25,16 @@
         <button id="review-button">Review!</button>
         <div id="review-page">
             <h1>Review</h1>
-            <select name="" id="">
+            <select id="subject-selector">
                 <option value="">เลือกวิชาเรียน</option>
                 <option value="2110104">2110104 Computer Programming</option>
                 <option value="2110222">2110222 Introduction to CEDT</option>
                 <option value="2110252">2110252 Digital Computer Logic</option>
             </select>
-            <textarea placeholder="Enter Name (Leave for Anonymous)" rows="1"></textarea>
-            <textarea placeholder="Enter Review" rows="5"></textarea>
+            <h6>Name</h6>
+            <textarea id="textarea-name" placeholder="Enter Name (Leave for Anonymous)" rows="1"></textarea>
+            <h6>Review</h6>
+            <textarea id="textarea-review" placeholder="Enter Review"></textarea>
             <button id="close-button">Close</button>
             <button id="submit-button">Submit</button>
         </div>

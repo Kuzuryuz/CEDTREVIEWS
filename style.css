@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
-    padding: 0; 
+    padding: 0;
+    font-family: 'Noto Sans Thai', sans-serif;
 }
 
 .navigation-bar {
-    background-color: white;
+    background-color: rgb(231, 231, 231);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    padding: 25px;
-    z-index: 10;
+    padding: 25px 0 25px 80px;
+    z-index: 10;    
 }
 
 .menu-container {
@@ -18,23 +21,35 @@
     position: relative;
     top: 0;
     left: 0;
-    margin-left: 20px;
+}
+
+.logo {
+    width: 77px;
+    position: absolute;
+    top: -44px;
+    left: -80px;
 }
 
 .menu-container a {
     text-decoration: none;
     font-size: 18px;
+    font-weight: 600;
     color: black;
     padding: 25px;
+}
+
+.menu-container a:hover {
+    background-color: rgb(204, 204, 204);
 }
 
 #review-button {
     font-size: 18px;
     font-weight: 600;
+    background-color: #474747;
+    color: white;
     padding: 15px 40px;
     border-radius: 18px;
     border: none;
-    background-color: #A4D9FF;
     position: absolute;
     top: 10px;
     right: 40px;
@@ -42,18 +57,7 @@
 }
 
 #review-button:hover {
-    background-color: #7eb7e0;
-}
-
-#close-button {
-    float: left;
-    background-color: azure;
-    font-size: 16px;
-    margin-top: 9px;
-    margin-left: 9px;
-    padding: 5px 10px;
-    border-radius: 10px;
-    cursor: pointer;
+    background-color: black;
 }
 
 #review-page {
@@ -75,39 +79,75 @@
 
 #review-page h1 {
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 800;
     text-align: center;
     margin-top: 30px;
 }
 
-#review-page button {
-    font-size: 16px;
-    padding: 10px 0;
-    width: 100px;
-    border-radius: 15px;
-    cursor: pointer;
+#subject-selector {
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 2% 5%;
+    padding: 1%;
+    width: 90%;
 }
 
-#review-page button:hover {
-    background-color: rgb(219, 219, 219);
+#subject-selector:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+#review-page h6 {
+    font-size: 18px;
+    margin: 0 5% 1% 5%;
 }
 
 #review-page textarea {
     resize: none;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 0 5% 1% 5%;
+    padding: 15px;
+    width: 88%;
 }
 
 #review-page textarea:hover {
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(231, 231, 231);
+}
+
+#textarea-review {
+    height: 32%;
+}
+
+#review-page button {
+    font-size: 16px;
+    background-color: #474747;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 0;
+    width: 120px;
+    cursor: pointer;
+}
+
+#review-page button:hover {
+    background-color: black;
+}
+
+#close-button {
+    position: absolute;
+    bottom: 4%;
+    left: 6%;
+}
+
+#submit-button {
+    position: absolute;
+    bottom: 4%;
+    right: 6%;
 }
 
 .page-title {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .description {
     padding: 100px;
-}
-
-.subject {
-    background-color: #062453;
 }
