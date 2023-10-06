@@ -45,6 +45,9 @@
     border: none;
     cursor: pointer;
 }
+#review-button:hover {
+    background-color: black;
+}
 
 #menu-checkbox {
     display: none;
@@ -56,6 +59,85 @@
     position: absolute;
     right: 1rem;
     cursor: pointer;
+}
+
+#review-page {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: white;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin: -17.7rem -40rem;
+    width: 80rem;
+    height: 40rem;
+    z-index: 10;
+}
+#review-page h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 2rem 0 1.5rem;
+}
+#subject-selector {
+    font-size: 1.2rem;
+    border-radius: 0.6rem;
+    margin: 0 0 1.4rem 5%;
+    padding: 0.5rem;
+    width: 90%;
+}
+#subject-selector:hover {
+    background-color: rgb(231, 231, 231);
+}
+#review-page h6 {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 5%;
+}
+#review-page textarea {
+    resize: none;
+    font-size: 1.2rem;
+    border-radius: 0.6rem;
+    margin: 0 0 1rem 5%;
+    padding: 0.5rem;
+    width: 88.6%;
+}
+#review-page textarea:hover {
+    background-color: rgb(231, 231, 231);
+}
+#textarea-review {
+    height: 8rem;
+}
+#review-page button {
+    font-size: 1.2rem;
+    background-color: #474747;
+    border: none;
+    color: white;
+    border-radius: 0.7rem;
+    padding: 0.6rem 0;
+    width: 9rem;
+    cursor: pointer;
+}
+#review-page button:hover {
+    background-color: black;
+}
+#close-review-button {
+    position: absolute;
+    bottom: 2rem;
+    left: 5%;
+}
+#submit-button {
+    position: absolute;
+    bottom: 2rem;
+    right: 5%;
+}
+
+.page-title {
+    margin-top: 0.7vw;
+}
+
+.description {
+    padding: 100px;
 }
 
 @media (max-width: 1280px) {
@@ -145,98 +227,268 @@
     }
 }
 
-#review-button:hover {
-    background-color: black;
+@media (max-width: 300px) {
+    #menu-checkbox:checked~.navbar {
+        height: 7.5rem;
+    }
+    .header {
+        height: 2.8rem;
+    }
+    .logo img {
+        height: 2.9rem;
+    }
+    .navbar a {
+        font-size: 0.9rem;
+        padding: 0.6rem 0;
+    }
+    .navbar a:hover {
+        padding: 0.6rem 1.5rem;
+    }
+    #review-button {
+        font-size: 0.9rem;
+        margin: 0.6rem 0 0 1.2rem;
+        padding: 0.25rem 1.2rem;
+        border-radius: 0.6rem;
+    }
 }
 
-#review-page {
-    position: fixed;
-    width: 40vw;
-    height: 25vw;
-    background: white;
-    border: 1px solid rgba(50,117,165,255);
-    border-radius: 0.8vw;
-    padding: 0.3vw;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 10;
-    display: none;
+@media (max-width: 2000px) {
+    #review-page {
+        border-radius: 0.8rem;
+        margin: -15.1rem -35rem;
+        width: 70rem;
+        height: 35rem;
+    }
+    #review-page h1 {
+        font-size: 2.2rem;
+        margin: 1.8rem 0 1.3rem;
+    }
+    #subject-selector {
+        font-size: 1.1rem;
+        border-radius: 0.5rem;
+        margin: 0 0 1.2rem 5%;
+        padding: 0.4rem;
+    }
+    #review-page h6 {
+        font-size: 1.1rem;
+        margin: 0 0 0.3rem 5%;
+    }
+    #review-page textarea {
+        font-size: 1.1rem;
+        border-radius: 0.5rem;
+        margin: 0 0 0.8rem 5%;
+        padding: 0.4rem;
+        width: 89%;
+    }
+    #textarea-review {
+        height: 7rem;
+    }
+    #review-page button {
+        font-size: 1.1rem;
+        border-radius: 0.6rem;
+        padding: 0.5rem 0;
+        width: 8rem;
+    }
+    #close-review-button {
+        bottom: 1.6rem;
+    }
+    #submit-button {
+        bottom: 1.6rem;
+    }
 }
 
-#review-page h1 {
-    font-size: 1.5vw;
-    font-weight: 800;
-    text-align: center;
-    margin-top: 1.2vw;
+@media (max-width: 1740px) {
+    #review-page {
+        border-radius: 0.7rem;
+        margin: -12.6rem -30rem;
+        width: 60rem;
+        height: 30rem;
+    }
+    #review-page h1 {
+        font-size: 2rem;
+        margin: 1.5rem 0 1rem;
+    }
+    #subject-selector {
+        font-size: 1rem;
+        border-radius: 0.4rem;
+        margin: 0 0 1rem 5%;
+        padding: 0.3rem;
+    }
+    #review-page h6 {
+        font-size: 1rem;
+        margin: 0 0 0.25rem 5%;
+    }
+    #review-page textarea {
+        font-size: 1rem;
+        border-radius: 0.4rem;
+        margin: 0 0 0.6rem 5%;
+        padding: 0.3rem;
+        width: 88.8%;
+    }
+    #textarea-review {
+        height: 6rem;
+    }
+    #review-page button {
+        font-size: 1rem;
+        border-radius: 0.5rem;
+        padding: 0.4rem 0;
+        width: 6.5rem;
+    }
+    #close-review-button {
+        bottom: 1.4rem;
+    }
+    #submit-button {
+        bottom: 1.4rem;
+    }
 }
 
-#subject-selector {
-    font-size: 0.7vw;
-    border-radius: 0.3vw;
-    margin: 1.5% 5% 1% 5%;
-    padding: 0.4vw;
-    width: 90%;
+@media (max-width: 1500px) {
+    #review-page {
+        border-radius: 0.6rem;
+        margin: -10.7rem -26rem;
+        width: 52rem;
+        height: 26rem;
+    }
+    #review-page h1 {
+        font-size: 1.8rem;
+        margin: 1.3rem 0 0.8rem;
+    }
+    #subject-selector {
+        font-size: 0.9rem;
+        border-radius: 0.3rem;
+        margin: 0 0 0.8rem 5%;
+        padding: 0.3rem;
+    }
+    #review-page h6 {
+        font-size: 0.9rem;
+        margin: 0 0 0.2rem 5%;
+    }
+    #review-page textarea {
+        font-size: 0.9rem;
+        border-radius: 0.3rem;
+        margin: 0 0 0.4rem 5%;
+        padding: 0.3rem;
+        width: 88.6%;
+    }
+    #textarea-review {
+        height: 5rem;
+    }
+    #review-page button {
+        font-size: 0.9rem;
+        border-radius: 0.4rem;
+        padding: 0.3rem 0;
+        width: 5.5rem;
+    }
+    #close-review-button {
+        bottom: 1.2rem;
+    }
+    #submit-button {
+        bottom: 1.2rem;
+    }
 }
 
-#subject-selector:hover {
-    background-color: rgb(231, 231, 231);
+@media (max-width: 1300px) {
+    #review-page {
+        border-radius: 0.5rem;
+        margin: -8.6rem -22.5rem;
+        width: 45rem;
+        height: 22rem;
+    }
+    #review-page h1 {
+        font-size: 1.5rem;
+        margin: 1.1rem 0 0.6rem;
+    }
+    #subject-selector {
+        font-size: 0.9rem;
+        border-radius: 0.3rem;
+        margin: 0 0 0.6rem 5%;
+        padding: 0.3rem;
+    }
+    #review-page h6 {
+        font-size: 0.9rem;
+        margin: 0 0 0.15rem 5%;
+    }
+    #review-page textarea {
+        font-size: 0.9rem;
+        border-radius: 0.3rem;
+        margin: 0 0 0.3rem 5%;
+        padding: 0.3rem;
+        width: 88.4%;
+    }
+    #textarea-review {
+        height: 4.8rem;
+    }
+    #review-page button {
+        font-size: 0.9rem;
+        border-radius: 0.4rem;
+        padding: 0.3rem 0;
+        width: 5.5rem;
+    }
+    #close-review-button {
+        bottom: 0.9rem;
+    }
+    #submit-button {
+        bottom: 0.9rem;
+    }
 }
 
-#review-page h6 {
-    font-size: 0.7vw;
-    margin: 1% 5% 0 5%;
+@media (max-width: 800px) {
+    #review-page {
+        border-radius: 0.5rem;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 75vw;
+        height: 60vh;
+    }
+    #review-page h1 {
+        font-size: 1.3rem;
+        margin: 1rem 0 0.4rem;
+    }
+    #subject-selector {
+        font-size: 0.8rem;
+        border-radius: 0.3rem;
+        margin: 0 0 0.6rem 5%;
+        padding: 0.2rem;
+    }
+    #review-page h6 {
+        font-size: 0.8rem;
+        margin: 0 0 0.15rem 5%;
+    }
+    #review-page textarea {
+        font-size: 0.8rem;
+        border-radius: 0.3rem;
+        margin: 0 0 0.2rem 5%;
+        padding: 0.2rem;
+        width: 88%;
+    }
+    #textarea-review {
+        height: 35%;
+    }
+    #review-page button {
+        font-size: 0.8rem;
+        border-radius: 0.4rem;
+        padding: 0.3rem 0;
+        width: 5.5rem;
+    }
+    #close-review-button {
+        bottom: 1rem;
+    }
+    #submit-button {
+        bottom: 1rem;
+    }
 }
 
-#review-page textarea {
-    resize: none;
-    font-size: 0.7vw;
-    border-radius: 0.2vw;
-    margin: 1% 5% 0 5%;
-    padding: 0.4vw;
-    width: 35.1vw;
+@media (max-width: 400px) {
+    #review-page textarea {
+        width: 87%;
+    }
 }
 
-#review-page textarea:hover {
-    background-color: rgb(231, 231, 231);
-}
-
-#textarea-review {
-    height: 6vw;
-}
-
-#review-page button {
-    font-size: 0.6vw;
-    background-color: #474747;
-    color: white;
-    border-radius: 0.4vw;
-    padding: 0.4vw 0;
-    width: 6vw;
-    cursor: pointer;
-}
-
-#review-page button:hover {
-    background-color: black;
-}
-
-#close-button {
-    position: absolute;
-    bottom: 1vw;
-    left: 2.3vw;
-}
-
-#submit-button {
-    position: absolute;
-    bottom: 1vw;
-    right: 2.3vw;
-}
-
-.page-title {
-    margin-top: 0.7vw;
-}
-
-.description {
-    padding: 100px;
+@media (max-width: 800px) and (max-height: 650px) {
+    #textarea-review {
+        height: 22%;
+    }
 }
