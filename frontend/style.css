@@ -23,14 +23,15 @@
     margin-top: 0.4rem;
     height: 4.8rem;
 }
-.navbar a {
+.navbar span {
     font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
     color: black;
     padding: 0 2.5rem;
+    cursor: pointer;
 }
-.navbar a:hover {
+.navbar span:hover {
     background-color: rgb(190, 190, 190);
     padding: 1.3rem 2.5rem;
 }
@@ -211,11 +212,11 @@
     .logo img {
         height: 4rem;
     }
-    .navbar a {
+    .navbar span {
         font-size: 1.3rem;
         padding: 0 2rem;
     }
-    .navbar a:hover {
+    .navbar span:hover {
         padding: 1rem 2rem;
     }
     #review-button {
@@ -233,11 +234,11 @@
     .logo img {
         height: 3.2rem;
     }
-    .navbar a {
+    .navbar span {
         font-size: 1.1rem;
         padding: 0 1.5rem;
     }
-    .navbar a:hover {
+    .navbar span:hover {
         padding: 0.75rem 1.5rem;
     }
     #review-button {
@@ -264,7 +265,7 @@
     #menu-checkbox:checked~.navbar {
         height: 9.55rem;
     }
-    #menu-checkbox:checked~.navbar a {
+    #menu-checkbox:checked~.navbar span {
         display: block;
     }
     .navbar {
@@ -275,13 +276,13 @@
         height: 0;
         background-color: rgb(231, 231, 231);
     }
-    .navbar a {
+    .navbar span {
         display: none;
         text-align: center;
         font-size: 1.1rem;
         padding: 0.75rem 0;
     }
-    .navbar a:hover {
+    .navbar span:hover {
         padding: 0.75rem 0;
     }
     #review-button {
@@ -301,11 +302,11 @@
     .logo img {
         height: 2.9rem;
     }
-    .navbar a {
+    .navbar span {
         font-size: 0.9rem;
         padding: 0.6rem 0;
     }
-    .navbar a:hover {
+    .navbar span:hover {
         padding: 0.6rem 1.5rem;
     }
     #review-button {

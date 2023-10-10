@@ -123,3 +123,15 @@ submitButton.addEventListener('click', async () => {
         subjectAndReviewError.style.display = "block";
     }
 });
+
+function scrollTo2110104() {
+    document.getElementById("2110104-title").scrollIntoView({ behavior: "smooth", block: "center" });
+}
+
+function scrollTo2110222() {
+    document.getElementById("2110222-title").scrollIntoView({ behavior: "smooth", block: "center" });
+}
+
+function scrollTo2110252() {
+    document.getElementById("2110252-title").scrollIntoView({ behavior: "smooth", block: "center" });
+}
