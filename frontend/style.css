@@ -185,7 +185,9 @@
     color: black;
     margin: 0;
     padding: 0 15px;
-    border: 5px solid (40,49,105);
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border: 2px solid rgb(40, 49, 105);
     border-radius: 12px;
 }
 .reviews-head {
