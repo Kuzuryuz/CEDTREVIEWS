@@ -150,7 +150,7 @@
 }
 
 .subject{
-    background-color: rgb(187, 187, 187);
+    background-color: rgb(40, 49, 105);
     padding: 3rem 0 2rem 0;
 }
 .subject h1 {
@@ -166,7 +166,7 @@
     font-size: 2rem;
     font-weight: 500;
     text-align: center;
-    background-color: rgb(135, 167, 228);
+    background-color: rgb(184, 208, 252);
     border-radius: 1.5rem;
     padding: 1rem 0;
     cursor: pointer;
@@ -185,7 +185,7 @@
     color: black;
     margin: 0;
     padding: 0 15px;
-    border: 2px solid #333;
+    border: 5px solid (40,49,105);
     border-radius: 12px;
 }
 .reviews-head {
